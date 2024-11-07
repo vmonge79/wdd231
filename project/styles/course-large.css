@@ -1,0 +1,47 @@
+@media (min-width: 768px) {
+    /* Navigation */
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        background-color: var(--color-deep-purple);
+
+    }
+
+    .navigation li {
+        padding: 10px 20px;
+    }
+
+    .navigation li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .navigation li a:hover {
+        font-size: 1.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+
+    /* Body */
+
+    h2 {
+        max-width: 1000px;
+    }
+
+
+    .active .course-content {
+        display: block;
+        max-width: 750px;
+    }
+
+}

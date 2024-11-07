@@ -90,3 +90,69 @@ const courses = [
     }
 ]
 
+const allButton = document.getElementById('all');
+const cseButton = document.getElementById('cse');
+const wddButton = document.getElementById('wdd');
+const coursesList = document.getElementById('courses-list');
+
+function displayCourseNames(courses) {
+    coursesList.innerHTML = '';  
+
+    courses.forEach(course => {
+        const courseElement = document.createElement('div');
+        courseElement.classList.add('course');
+
+        if (course.completed) {
+            courseElement.classList.add('completed');
+        } else {
+            courseElement.classList.add('incomplete');
+        }
+
+        const courseTitle = document.createElement('h3');
+        courseTitle.classList.add('course-title');
+        courseTitle.innerText = course.title;
+
+       
+        courseElement.appendChild(courseTitle);
+
+      
+        const courseContent = document.createElement('div');
+        courseContent.classList.add('course-content');
+        courseContent.innerHTML = `
+            <p><strong>Subject:</strong> ${course.subject}</p>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Description:</strong> ${course.description}</p>
+        `;
+        courseContent.style.display = 'none';  // 
+        courseElement.appendChild(courseContent);
+
+    
+        courseElement.addEventListener('click', () => {
+            if (courseContent.style.display === 'none') {
+                courseContent.style.display = 'block';  
+                courseElement.classList.add('active');  
+            } else {
+                courseContent.style.display = 'none';  
+                courseElement.classList.remove('active'); 
+            }
+        });
+ 
+        coursesList.appendChild(courseElement);
+    });
+}
+
+allButton.addEventListener('click', () => {
+    displayCourseNames(courses);  
+});
+
+cseButton.addEventListener('click', () => {
+    const cseCourses = courses.filter(course => course.subject === 'CSE');
+    displayCourseNames(cseCourses);  
+});
+
+wddButton.addEventListener('click', () => {
+    const wddCourses = courses.filter(course => course.subject === 'WDD');
+    displayCourseNames(wddCourses);  
+});
+
+displayCourseNames(courses);

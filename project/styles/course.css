@@ -102,7 +102,7 @@ main ul {
     justify-content: space-evenly;
     list-style: none;
     padding: 0;
-    width: 100%;
+    width: 50%;
 }
 
 .courses li {
@@ -113,7 +113,61 @@ main ul {
     width: 30%;
     text-align: center;
     margin-bottom: 10px;
+}
 
+.courses li:hover {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+/* Courses en JS */
+
+.course {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.completed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.incomplete {
+    background-color: #f44336;
+    color: white;
+}
+
+.course-title {
+    font-size: 18px;
+    font-weight: bold;
+    transition: font-sixe 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-title:hover {
+    font-size: 25px;
+}
+
+.course-content {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+    background-color: white;
+    color: var(--color-light-purple);
+    border-radius: 5px;
+    display: none;
+}
+
+.active {
+    background-color: var(--color-light-purple);
+}
+
+.active .course-content {
+    display: block;
 }
 
 /* FOOTER */

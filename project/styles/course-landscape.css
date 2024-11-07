@@ -1,0 +1,44 @@
+@media (orientation: landscape) {
+
+    /* Navigation */
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        background-color: var(--color-deep-purple);
+
+    }
+
+    .navigation li {
+        padding: 10px 20px;
+    }
+
+    .navigation li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .navigation li a:hover {
+        color: lightgray;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* Body */
+
+    h2 {
+        width: 600px;
+    }
+
+    .course-title {
+        flex-direction: row;
+    }
+
+}
