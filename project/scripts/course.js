@@ -155,4 +155,3 @@ wddButton.addEventListener('click', () => {
     displayCourseNames(wddCourses);  
 });
 
-displayCourseNames(courses);
