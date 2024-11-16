@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Frank%20Ruhl%20Libre:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frank%20Ruhl%20Libre:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <link href="styles/chamber.css" rel="stylesheet">
     <link href="styles/chamber-large.css" rel="stylesheet">
@@ -21,26 +22,54 @@
 
     <meta property="og:title" content="Costa Rica Chamber of Commerce" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://niubox.legal/wp-content/uploads/2021/07/Blog-julio-Comercio-Electronico@3x-1.png" />
-    <meta property="og:url" content="hhttps://vmonge79.github.io/wdd231/chamber/directory.html" />
-    
-    <meta property="og:description" content="Promotion of economic growth by providing network opportunities, advocacy, resources and services to help business succeed." />
+    <meta property="og:image"
+        content="https://niubox.legal/wp-content/uploads/2021/07/Blog-julio-Comercio-Electronico@3x-1.png" />
+    <meta property="og:url" content="https://vmonge79.github.io/wdd231/chamber/directory.html" />
+
+    <meta property="og:description"
+        content="Promotion of economic growth by providing network opportunities, advocacy, resources and services to help business succeed." />
 
     <script src="scripts/getdates.js" defer=""></script>
+    <script src="scripts/chamber.js" defer=""></script>
 
 
 </head>
 
 <body>
     <header>
+        <img src="images/Costa-rica-icon.png" alt="Costa Rica">
+        <h1>Costa Rica Chamber of Commerce</h1>
 
+        <a id="menu" href="#">☰</a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <picture>
+            <source media="(max-width:319px)" srcset="images/comercio1-small.png" />
+            <source media="(min-width:320px)" srcset="images/comercio1-large.png" />
+            <img src="images/comercio1-small.png" alt="Commerce Picture">
+        </picture>
+
+        <section class="sec1">
+
+        </section>
+
+        <section class="sec2">
+
+        </section>
+    </main>
 
 
     <footer>
-        <p>©</p>
-        <p id="year"></p>
-        <p>🌺 Viviana Monge M. 🌺 Costa Rica 🇨🇷 </p>
+        <p>© <span id="year"></span>Costa Rica Chamber of Commerce</p>
+        <p>WDD231 Class Project</p>
         <p id="lastModified"></p>
     </footer>
 
