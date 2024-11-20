@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Tech Innovations",
+        "address": "123 Main St, Silicon Valley, CA",
+        "phone": "555-123-4567",
+        "website": "https://techinnovations.com",
+        "icon": "./images/logo.avif",
+        "membershipLevel": 3,
+        "founded": 2010,
+        "industry": "Technology"
+    },
+    {
+        "name": "Green Earth Solutions",
+        "address": "456 Elm St, Portland, OR",
+        "phone": "555-987-6543",
+        "website": "https://greenearth.com",
+        "icon": "./images/logo.avif",
+        "membershipLevel": 2,
+        "founded": 2015,
+        "industry": "Environmental Services"
+    },
+    {
+        "name": "Elite Fitness Co.",
+        "address": "789 Fitness Ln, Austin, TX",
+        "phone": "555-654-3210",
+        "website": "https://elitefitness.com",
+        "icon": "./images/logo.avif",
+        "membershipLevel": 3,
+        "founded": 2008,
+        "industry": "Health and Fitness"
+    },
+    {
+        "name": "Global Travel Agency",
+        "address": "321 Adventure Ave, Miami, FL",
+        "phone": "555-321-9876",
+        "website": "https://globaltravel.com",
+        "icon": "./images/logo.avif",
+        "membershipLevel": 1,
+        "founded": 2000,
+        "industry": "Travel and Tourism"
+    },
+    {
+        "name": "Silver Linings Healthcare",
+        "address": "555 Care Rd, Denver, CO",
+        "phone": "555-876-5432",
+        "website": "https://silverlinings.com",
+        "icon": "./images/logo.avif",
+        "membershipLevel": 2,
+        "founded": 2012,
+        "industry": "Healthcare"
+    },
+    {
+        "name": "Bright Future Education",
+        "address": "111 Knowledge Way, Boston, MA",
+        "phone": "555-432-1098",
+        "website": "https://brightfuture.com",
+        "icon": "./images/logo.avif",
+        "membershipLevel": 1,
+        "founded": 1999,
+        "industry": "Education"
+    },
+    {
+        "name": "Urban Eats",
+        "address": "222 Gourmet Blvd, New York, NY",
+        "phone": "555-210-6543",
+        "website": "https://urbaneats.com",
+        "icon": "./images/logo.avif",
+        "membershipLevel": 3,
+        "founded": 2018,
+        "industry": "Food and Beverage"
+    },
+    {
+        "name": "Peak Performance Gear",
+        "address": "333 Outdoor Dr, Seattle, WA",
+        "phone": "555-789-1234",
+        "website": "https://peakgear.com",
+        "icon": "./images/logo.avif",
+        "membershipLevel": 2,
+        "founded": 2005,
+        "industry": "Outdoor Equipment"
+    },
+    {
+        "name": "NextGen Media",
+        "address": "444 Content St, Los Angeles, CA",
+        "phone": "555-456-7890",
+        "website": "https://nextgenmedia.com",
+        "icon": "./images/logo.avif",
+        "membershipLevel": 1,
+        "founded": 2010,
+        "industry": "Media and Entertainment"
+    },
+    {
+        "name": "Harmony Home Design",
+        "address": "555 Interior Ln, Chicago, IL",
+        "phone": "555-543-2109",
+        "website": "https://harmonyhome.com",
+        "icon": "./images/logo.avif",
+        "membershipLevel": 2,
+        "founded": 2016,
+        "industry": "Home Design"
+    }
+]

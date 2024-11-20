@@ -107,3 +107,84 @@ footer p {
 .p2 {
     padding-bottom: 7px;
 }
+
+/* VISTAS /*
+
+/* Estilos base para las tarjetas */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* Espacio entre tarjetas */
+    padding: 1rem;
+    justify-content: center;
+    /* Centra las tarjetas en el contenedor */
+}
+
+.card {
+    border: 1px solid #ccc;
+    /* Borde ligero */
+    padding: 1rem;
+    /* Espaciado interno */
+    background-color: #fff;
+    /* Fondo blanco */
+    border-radius: 0.5rem;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para profundidad */
+    text-align: center;
+    /* Centra el contenido */
+    max-width: 300px;
+    /* Ancho máximo */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Animación */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Aumenta la sombra al pasar el mouse */
+}
+
+.card img {
+    max-width: 100%;
+    /* Imagen ajusta al ancho */
+    height: auto;
+    /* Mantiene la proporción */
+    border-radius: 0.5rem;
+    /* Bordes redondeados */
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: #333;
+    /* Color del texto */
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+/* Vista en grid */
+.grid-view .card {
+    flex: 1 1 calc(33.333% - 1rem);
+    /* Tres columnas */
+    box-sizing: border-box;
+}
+
+/* Vista en lista */
+.list-view {
+    flex-direction: column;
+    /* Cambia a columna */
+}
+
+.list-view .card {
+    flex: 1 1 100%;
+    /* Una sola columna */
+    max-width: 100%;
+    /* Ancho completo */
+}
