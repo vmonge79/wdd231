@@ -13,15 +13,15 @@ const cardsSection = document.querySelector('.cards');
 
 async function fetchAndDisplayMembers() {
     try {
-        
+
         const response = await fetch('data/members.json');
- 
+
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
- 
+
         const members = await response.json();
- 
+
         members.forEach(member => {
             const card = document.createElement('div');
             card.classList.add('card');
@@ -73,3 +73,65 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsSection.classList.add('list-view');
     });
 });
+
+
+/*WEATHER*/
+
+const apiKey = '1f9d79c19d9a69c120dee7b36a764e0f';
+const city = 'San Jose';
+const units = 'metric';
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+
+async function fetchWeather() {
+    try {
+        const weatherResponse = await fetch(weatherUrl);
+        const weatherData = await weatherResponse.json();
+
+        const forecastResponse = await fetch(forecastUrl);
+        const forecastData = await forecastResponse.json();
+
+        let weatherIcon = '';
+
+        
+        if (weatherData.weather[0].description.includes("clear")) {
+            weatherIcon = "☀️"; 
+        } else if (weatherData.weather[0].description.includes("cloud")) {
+            weatherIcon = "☁️"; 
+        } else if (weatherData.weather[0].description.includes("rain")) {
+            weatherIcon = "🌧️"; 
+    
+        } else {
+            weatherIcon = "🌈";
+        }
+
+        document.getElementById('weather').innerHTML = `
+      <p>${weatherIcon}</p>
+      <p><strong>Weather:</strong> ${weatherData.weather[0].description}</p>
+      <p>Temperature: ${weatherData.main.temp}°C</p>
+      <p>Feels Like: ${weatherData.main.feels_like}°C</p>
+      <p>Humidity: ${weatherData.main.humidity}%</p>
+      <p>Wind Speed: ${weatherData.wind.speed} m/s</p>
+    `;
+
+        const forecastDiv = document.getElementById('forecast');
+        forecastDiv.innerHTML = '';
+
+        for (let i = 1; i <= 3; i++) {
+            const forecast = forecastData.list[i * 8 - 1];
+            const day = new Date(forecast.dt * 1000).toLocaleDateString('en-US', { weekday: 'long' });
+            forecastDiv.innerHTML += `
+        <div>
+          <h4>${day}</h4>
+          <p>${forecast.main.temp}°C</p>
+        </div>
+      `;
+        }
+    } catch (error) {
+        document.getElementById('weather').textContent = 'Error loading weather data.';
+        document.getElementById('forecast').textContent = 'Error loading forecast data.';
+    }
+}
+
+fetchWeather();
+

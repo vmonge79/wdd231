@@ -1,4 +1,4 @@
-@media all and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     /* Navigation */
 
     .navigation {
@@ -31,5 +31,26 @@
 
     h1 {
         font-size: 2rem;
+    }
+
+    /*INDEX*/
+
+    .secindex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: start;
+
+    }
+
+    .column {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column h3 {
+        margin-bottom: 10px;
     }
 }
