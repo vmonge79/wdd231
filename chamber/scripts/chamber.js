@@ -56,6 +56,74 @@ function getMembershipLevel(level) {
 
 fetchAndDisplayMembers();
 
+/*RANDOM FOR INDEX*/
+
+document.addEventListener("DOMContentLoaded", async () => {
+    try {
+
+        const response = await fetch('data/members.json');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+
+        const members = await response.json();
+
+
+        const randomMembers = getRandomMembers(members, 3);
+
+
+        displayRandomMembers(randomMembers);
+    } catch (error) {
+        console.error('Error fetching or displaying the members data:', error);
+    }
+});
+
+ 
+function getRandomMembers(members, count) {
+    const shuffled = [...members].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+ 
+function displayRandomMembers(members) {
+    const cardsContainer = document.querySelector('#cards2');
+    if (!cardsContainer) throw new Error('No se encontró el contenedor con ID "cards2".');
+
+    cardsContainer.innerHTML = '';  
+
+    members.forEach(member => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+        card.innerHTML = `
+            <img src="${member.icon}" alt="${member.name} Logo">
+            <h2>${member.name}</h2>
+            <p><strong>Address:</strong> ${member.address}</p>
+            <p><strong>Phone:</strong> ${member.phone}</p>
+            <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
+            <p><strong>Industry:</strong> ${member.industry}</p>
+            <a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
+        `;
+        cardsContainer.appendChild(card);
+    });
+}
+
+ 
+function getMembershipLevel(level) {
+    switch (level) {
+        case 1:
+            return 'Member';
+        case 2:
+            return 'Silver';
+        case 3:
+            return 'Gold';
+        default:
+            return 'Unknown';
+    }
+}
+
+
 /* VISTAS LIST O GRID */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -93,14 +161,14 @@ async function fetchWeather() {
 
         let weatherIcon = '';
 
-        
+
         if (weatherData.weather[0].description.includes("clear")) {
-            weatherIcon = "☀️"; 
+            weatherIcon = "☀️";
         } else if (weatherData.weather[0].description.includes("cloud")) {
-            weatherIcon = "☁️"; 
+            weatherIcon = "☁️";
         } else if (weatherData.weather[0].description.includes("rain")) {
-            weatherIcon = "🌧️"; 
-    
+            weatherIcon = "🌧️";
+
         } else {
             weatherIcon = "🌈";
         }
