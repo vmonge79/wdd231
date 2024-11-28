@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber ot Commerce - Costa Rica">
+    <meta name="author" content="Viviana Monge">
+    <title>Costa Rica Chamber of Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Frank%20Ruhl%20Libre:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link href="styles/chamber.css" rel="stylesheet">
+    <link href="styles/chamber-large.css" rel="stylesheet">
+    <link href="styles/chamber-landscape.css" rel="stylesheet">
+
+    <link rel="icon" href="images/cr-icon.ico">
+
+    <meta property="og:title" content="Costa Rica Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://niubox.legal/wp-content/uploads/2021/07/Blog-julio-Comercio-Electronico@3x-1.png" />
+    <meta property="og:url" content="https://vmonge79.github.io/wdd231/chamber/directory.html" />
+
+    <meta property="og:description"
+        content="Promotion of economic growth by providing network opportunities, advocacy, resources and services to help business succeed." />
+
+    <script src="scripts/getdates.js" defer=""></script>
+    <script src="scripts/chamber.js" defer=""></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/Costa-rica-icon.png" alt="Costa Rica">
+        <h1>Costa Rica Chamber of Commerce</h1>
+
+        <a id="menu" href="#">☰</a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="/directory.html">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source media="(max-width:319px)" srcset="images/comercio1-small.png" />
+            <source media="(min-width:320px)" srcset="images/comercio1-large.png" />
+            <img src="images/comercio1-small.png" alt="Commerce Picture">
+        </picture>
+
+        <section class="joinsec">
+        <div class="container">
+        <h2 class="join">Join</h2>
+        </div>
+            <section class="container-form-membership">
+            <form method="get" action="/thanks.html" class="f1">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>First Name* <input type="text" name="fname" autocomplete="given-name"</label>
+                    <label>Last Name* <input type="text" name="lname" autocomplete="family-name"</label>
+                    <label>Phone* <input type="tel" name="phone" placeholder="88888888" autocomplete="mobile"</label>
+                    <label>Email* <input type="email" placeholder="name@domain.com" autocomplete="email"</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Bussiness Information</legend>
+                    <label for="organization-name">Business/Organization Name*</label>
+                    <input type="text" id="organization-name" name="organization" autocomplete="organization" required title="Please enter the name of your business or organization.">
+                    <label for="organization-title">Organizational Title*</label><input type="text" id="organization-title" name="title" autocomplete="organization-title" pattern="^[a-zA-Z\s\-]{7,}$" required title="Please enter at least seven characters, using only letters, hyphens, and spaces.">
+                    <label for="organization-description">Business/Organization Description*</label>
+                    <textarea id="organization-description" name="organization-description"
+                    title="Provide a brief description of your business or organization." rows="5" cols="40" required>
+                    </textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Level*</legend>
+                    <label><input type="radio" name="level" value="Non Profit Membership">Non Profit Membership</label>
+                    <label><input type="radio" name="level" value="Bronze Membership">Bronze Membership</label>
+                    <label><input type="radio" name="level" value="Silver Membership">Silver Membership</label>
+                    <label><input type="radio" name="level" value="Gold Membership">Gold Membership</label>
+                </fieldset>
+                <input type="hidden" name="timestamp" id="timestamp" value="">
+                <input type="submit" value="Submit Application">
+            </form>
+        </section>
+
+        
+        <section class="membership">
+            <div class="container">
+            <h2 class="join">Membership Levels</h2>
+            </div>
+            
+            <div class="membertype">
+                <p class="membership" onclick="openModal('nonProfitModal')">Non Profit Membership</p>
+                <p class="membership" onclick="openModal('bronzeModal')">Bronze Membership</p>
+                <p class="membership" onclick="openModal('silverModal')">Silver Membership</p>
+                <p class="membership" onclick="openModal('goldModal')">Gold Membership</p>
+                </section>
+                
+                <!-- Modal structure -->
+                <div id="nonProfitModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('nonProfitModal')">&times;</span>
+                        <h3>Non-Profit Membership</h3>
+                        <p>A membership designed for non-profit organizations that want to engage with the local business community while benefiting from resources, networking opportunities, and support for their mission.</p>
+                    </div>
+                </div>
+                
+                <div id="bronzeModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
+                        <h3>Bronze Membership</h3>
+                        <p>A basic membership offering essential benefits such as access to networking events, business resources, and discounted services to help businesses establish themselves in the community.</p>
+                    </div>
+                </div>
+                
+                <div id="silverModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('silverModal')">&times;</span>
+                        <h3>Silver Membership</h3>
+                        <p>A mid-level membership providing enhanced access to events, marketing opportunities, and additional support for businesses looking to expand their reach and visibility within the local market.</p>
+                    </div>
+                </div>
+                
+                <div id="goldModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('goldModal')">&times;</span>
+                        <h3>Gold Membership</h3>
+                        <p>The premier membership tier offering exclusive benefits, including VIP access to events, high visibility in promotional materials, and personalized support to help businesses achieve significant growth and success.
+                        </p>
+                    </div>
+                </div>
+        </section>
+        </section>
+        
+    </main>
+
+
+    <footer>
+        <p>© <span id="year"></span>Costa Rica Chamber of Commerce</p>
+        <p>WDD231 Class Project</p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+</body>
+
+</html>

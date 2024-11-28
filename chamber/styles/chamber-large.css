@@ -53,4 +53,35 @@
     .column h3 {
         margin-bottom: 10px;
     }
+
+    .joinsec {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+
+    .joinsec .container h2.join {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .joinsec .membership h2.join {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    .joinsec .container-form-membership {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    .joinsec .membership .modal {
+        grid-column: 2 / 3;
+        grid-row: 2;
+    }
+
+    .membertype {
+        flex-direction: column;
+    }
 }
