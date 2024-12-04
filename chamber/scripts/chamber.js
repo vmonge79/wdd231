@@ -205,21 +205,50 @@ fetchWeather();
 
 /*MODAL*/
 
-function openModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = "block";
+function getDaysDifference(lastVisit) {
+    const today = new Date();
+    const lastVisitDate = new Date(lastVisit);
+    const timeDiff = today - lastVisitDate;
+    const daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
+    return daysDiff;
 }
 
-function closeModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = "none";
+function showModal(message) {
+    const messageElement = document.getElementById('message-text');
+    const modal = document.getElementById('visit-modal');
+
+    messageElement.textContent = message;
+    modal.style.display = "block"; // Mostrar el modal
 }
 
-window.onclick = function (event) {
-    var modals = document.getElementsByClassName("modal");
-    for (var i = 0; i < modals.length; i++) {
-        if (event.target == modals[i]) {
-            modals[i].style.display = "none";
+function handleVisit() {
+    const lastVisit = localStorage.getItem('lastVisit');
+
+    if (!lastVisit) {
+        showModal('Welcome! Let us know if you have any questions.');
+    } else {
+        const daysDifference = getDaysDifference(lastVisit);
+
+        if (daysDifference < 1) {
+            showModal('Back so soon! Awesome!');
+        } else {
+            const dayText = daysDifference === 1 ? 'day' : 'days';
+            showModal(`You last visited ${daysDifference} ${dayText} ago.`);
         }
     }
+
+    localStorage.setItem('lastVisit', new Date().toISOString());
 }
+
+document.getElementById('close-btn').addEventListener('click', function () {
+    const modal = document.getElementById('visit-modal');
+    modal.style.display = 'none'; // Cerrar el modal
+});
+
+window.onload = function () {
+    handleVisit();
+};
+
+
+
+
