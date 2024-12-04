@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber ot Commerce - Costa Rica">
+    <meta name="author" content="Viviana Monge">
+    <title>Costa Rica Chamber of Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Frank%20Ruhl%20Libre:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link href="styles/chamber.css" rel="stylesheet">
+    <link href="styles/chamber-large.css" rel="stylesheet">
+    <link href="styles/chamber-landscape.css" rel="stylesheet">
+
+    <link rel="icon" href="images/cr-icon.ico">
+
+    <meta property="og:title" content="Costa Rica Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://niubox.legal/wp-content/uploads/2021/07/Blog-julio-Comercio-Electronico@3x-1.png" />
+    <meta property="og:url" content="https://vmonge79.github.io/wdd231/chamber/directory.html" />
+
+    <meta property="og:description"
+        content="Promotion of economic growth by providing network opportunities, advocacy, resources and services to help business succeed." />
+
+    <script src="scripts/getdates.js" defer=""></script>
+    <script src="scripts/chamber.js" defer=""></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/Costa-rica-icon.png" alt="Costa Rica">
+        <h1>Costa Rica Chamber of Commerce</h1>
+
+        <a id="menu" href="#">☰</a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="/directory.html">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source media="(max-width:319px)" srcset="images/comercio1-small.png" />
+            <source media="(min-width:320px)" srcset="images/comercio1-large.png" />
+            <img src="images/comercio1-small.png" alt="Commerce Picture">
+        </picture>
+
+        <section class="grid">
+            <div class="CRinfo">
+                <h3>CR Info</h3>
+                <p>Population: 5.300.000</p>
+                <p>Area: 51,100km<sup>2</sub></sub></p>
+                <p>Biodiversity: 6% of the world</p>
+                <p>Protected Area: 25%</p>
+                <p>Highest Mountain: Chirripo 3280masl</p>
+            </div>
+
+            <div class="top5">
+                <h3>Top 5 Places to Visit</h3>
+                <p>Population: Manuel Antonio National Park</p>
+                <picture>
+                    <source media="(max-width:319px)" srcset="images/manuel-small." />
+                    <source media="(min-width:320px)" srcset="images/comercio1-large.png" />
+                    <img src="images/manuel.jpeg" alt="Commerce Picture" loading="lazy">
+                </picture>
+                <p>Arenal Volcano</p>
+                <picture>
+                    <source media="(max-width:319px)" srcset="images/manuel.jpeg" />
+                    <source media="(min-width:320px)" srcset="images/manuel.jpeg" />
+                    <img src="images/manuel.jpeg" alt="Commerce Picture" loading="lazy">
+                </picture>
+                <p>Tamarindo Beach</p>
+                <picture>
+                    <source media="(max-width:319px)" srcset="images/comercio1-small.png" />
+                    <source media="(min-width:320px)" srcset="images/comercio1-large.png" />
+                    <img src="images/comercio1-small.png" alt="Commerce Picture" loading="lazy">
+                </picture>
+                <p>Monte Verde Cloud Forest</p>
+                <picture>
+                    <source media="(max-width:319px)" srcset="images/comercio1-small.png" />
+                    <source media="(min-width:320px)" srcset="images/comercio1-large.png" />
+                    <img src="images/comercio1-small.png" alt="Commerce Picture" loading="lazy">
+                </picture>
+                <p>Tortuguero National Park</p>
+                <picture>
+                    <source media="(max-width:319px)" srcset="images/comercio1-small.png" />
+                    <source media="(min-width:320px)" srcset="images/comercio1-large.png" />
+                    <img src="images/comercio1-small.png" alt="Commerce Picture" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="climb">
+                <h3>Chirripo Hike</h3>
+                <p>19km to the highest peak in Costa Rica</p>
+                <p>Visit the Ventisqueros and the famous Crestones</p>
+                <p>Enjoy the diverse ecosystems along the way</p>
+                <p>Experience tho opportunity to see the Pacific and the Caribbean coast from the same viewpoint.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© <span id="year"></span>Costa Rica Chamber of Commerce</p>
+        <p>WDD231 Class Project</p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+</body>
+
+</html>
