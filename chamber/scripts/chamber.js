@@ -225,15 +225,15 @@ function handleVisit() {
     const lastVisit = localStorage.getItem('lastVisit');
 
     if (!lastVisit) {
-        showModal('Welcome! Let us know if you have any questions.');
+        showModal('Welcome! Let us know if you have any questions. 🤗');
     } else {
         const daysDifference = getDaysDifference(lastVisit);
 
         if (daysDifference < 1) {
-            showModal('Back so soon! Awesome!');
+            showModal('Back so soon! Awesome! 🤩');
         } else {
             const dayText = daysDifference === 1 ? 'day' : 'days';
-            showModal(`You last visited ${daysDifference} ${dayText} ago.`);
+            showModal(`You last visited ${daysDifference} ${dayText} ago. Welcomr back! 👌🏽`);
         }
     }
 
