@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Agrandir+Wide:wght@400;700&family=Barlow+Condensed:wght@400;700&display=swap');
+
+:root { 
+    --color-dark-green: rgb(39, 121, 50);
+    --color-bright-green: rgb(76, 175, 80);
+    --color-lime-green: rgb(128, 237, 153);
+    --color-orange: rgb(255, 152, 0);
+    --font-primary: 'Agrandir Wide', sans-serif;
+    --font-secondary: 'Barlow Condensed', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-secondary);
+}
+
+h1 {
+    color: var(--color-dark-green);
+    font-size:3rem;
+}
+
+h2 {
+    color: var(--color-orange);
+}
+
+h3 {
+    color: var(--color-bright-green)
+}
+
+/*HEADER*/
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navigation{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    list-style:none;
+    padding: 0;
+}
+
+.navigation.show{
+    display: flex;
+}
+
+ .navigation li {
+     padding: 10px 0;
+ }
+
+ .navigation li a {
+     color: var(--color-dark-green);
+     text-decoration: none;
+ }
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: var(--color-dark-green);
+    max-height: 200px;
+    height: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color-dark-green);
+}
+
+
+/*FOOTER*/
+
+.orange {
+    background-color: var(--color-orange);
+    height: 15px;
+    margin:0;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: var(--color-dark-green);
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p{
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
