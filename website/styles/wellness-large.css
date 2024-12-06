@@ -1,6 +1,11 @@
 @media screen and (min-width: 600px) {
     /* Navigation */
 
+    
+    header h1{
+        font-size: 3.5rem;
+    }
+
     #menu {
         display:none;
     }
@@ -20,16 +25,20 @@
     }
 
     .navigation li a {
-        color: white;
+        color: var(--color-dark-green);
         text-decoration: none;
         transition: color 0.3s ease;
-    }
-
-    .navigation li a:hover {
         font-size: 1.5rem;
     }
 
-    #menu {
-        display: none;
+    .navigation li a:hover {
+        font-size: 2rem;
     }
+}
+
+/*FOOTER*/
+
+.orange {
+    height: 25px;
+
 }

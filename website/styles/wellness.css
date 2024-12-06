@@ -41,30 +41,61 @@ h3 {
 /*HEADER*/
 
 #menu {
+    margin-left: auto;
+    order:2;
+    z-index: 10;
+}
+
+#menu span{
     display: block;
     font-size: 2rem;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+
+#menu.active span{
+    display: none;
+}
+
+#menu.active::before {
+    content: "✖";
+    font-size: 2rem;
+    color: var(--color-dark-green);
+    position: relative;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .navigation{
     display: none;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     list-style:none;
     padding: 0;
+    font-family: var(--font-secondary);
+    font-weight: bold;
 }
 
 .navigation.show{
     display: flex;
+    flex-direction: column;
+    gap: 2px;
+    list-style: none;
+    padding: 10px 15px;
+    margin: 0;
 }
 
  .navigation li {
-     padding: 10px 0;
+     padding: 2px 0;
  }
 
  .navigation li a {
+     font-size: 1rem;
      color: var(--color-dark-green);
      text-decoration: none;
+     line-height: 1.2;
  }
 
 header {
@@ -76,6 +107,11 @@ header {
     color: var(--color-dark-green);
     max-height: 200px;
     height: 100%;
+    padding: 0 20px;
+}
+
+header img, header h1{
+    margin: 0;
 }
 
 header a {
@@ -83,11 +119,44 @@ header a {
     color: var(--color-dark-green);
 }
 
+header h1 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+header nav{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
 
 /*FOOTER*/
 
 .orange {
-    background-color: var(--color-orange);
+    background: linear-gradient(135deg, rgb(255, 152, 0), rgb(39, 121, 50), rgb(255, 152, 0));
+        background-size: 400% 400%;
+        animation: wave 5s ease infinite;
+    
+        @keyframes wave {
+            0% {
+                background-position: 0% 50%;
+            }
+    
+            50% {
+                background-position: 100% 50%;
+            }
+    
+            100% {
+                background-position: 0% 50%;
+            }
+        }
     height: 15px;
     margin:0;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
