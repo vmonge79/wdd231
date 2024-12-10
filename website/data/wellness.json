@@ -1,0 +1,165 @@
+[
+    {
+        "product": "Bio-Active Complete Multi-vitamin For Men",
+        "icon": "./images/multi-vitamin-men_front.png",
+        "description": "24 Vitamins and Minerals, \nImmune and Cardiovascular Support, \nPromotes Healthy Aging",
+        "more-info": "https://www.livegood.com/multivitaminForMen"
+    },
+    {
+        "product": "Bio-Active Complete Multi-Vitamin for Women with Iron",
+        "icon": "./images/multi-vitamin-women_front.png",
+        "description": "24 Vitamins and Minerals, \nImmune and Cardiovascular Support, \nPromotes Healthy Aging",
+        "more-info": "https://www.livegood.com/multivitaminForWomen"
+    },
+    {
+        "product": "D3-K2 2000",
+        "icon": "./images/d3-k2_front.png",
+        "description": "Support Strong Bone Density, \nMaintain Healthy Heart Function, \nHighest Quality Vitamins D and K",
+        "more-info": "https://www.livegood.com/d3k2"
+    },
+    {
+        "product": "Ultra Magnesium Complex",
+        "icon": "./images/ultra-magnesium-complex_front.png",
+        "description": "Maximum Muscle, Nerve and Energy Support, \nSupports Over 300 Enzyme Reactions, \nSleep Support, \nMost Bio-Available Magnesium",
+        "more-info": "https://www.livegood.com/ultraMagnesiumComplex"
+    },
+    {
+        "product": "Organic Complete Plant-Based Protein",
+        "icon": "./images/plant-based-protein-v2_front2.png",
+        "description": "Rebuild and Restore Muscles and Joints, \nBuild and Maintain Lean Muscle, \nFortified with All Essential Amino Acids",
+        "more-info": "https://www.livegood.com/completePlantBasedProtein"
+    },
+    {
+        "product": "Whey Protein Isolate - With Colostrum",
+        "icon": "./images/whey-protein-tile.png",
+        "description": "Build and Maintain Lean Muscle, \nFortified with Colostrum, \nDigestive Enzymes for Maximum Absorption, \nDelicious Chocolate Flavor",
+        "more-info": "https://www.livegood.com/wheyProteinIsolate"
+    },
+    {
+        "product": "Organic Super Greens",
+        "icon": "./images/super-greens_front.png",
+        "description": "Immune Protection, \nEnergy and Recovery, \nStress Support, \nDigestive Health, \nDetox Support",
+        "more-info": "https://www.livegood.com/organicSuperGreens"
+    },
+    {
+        "product": "Organic Super Reds",
+        "icon": "./images/super-reds_front.png",
+        "description": "Cardiovascular Health, \nCirculation, \nSexual Health, \nBrain and Cognitive Function",
+        "more-info": "https://www.livegood.com/organicSuperReds"
+    },
+    {
+        "product": "Organic Coffee",
+        "icon": "./images/organic-coffee.png",
+        "description": "Support a Healthy Mood, \nFocus and Mental Clarity, \nWeight Loss, \nFunctional Mushrooms",
+        "more-info": "https://www.livegood.com/organicCoffee"
+    },
+    {
+        "product": "CBD Oil",
+        "icon": "./images/full-spectrum-collage-b.png",
+        "description": "Highest Quality, \nFaster Absorption, \nMaximum Benefit",
+        "more-info": "https://www.livegood.com/cbdOil"
+    },
+    {
+        "product": "CBD Oil - For Pets",
+        "icon": "./images/cbd-pets.jpg",
+        "description": "Dietary Supplement, \nNatural Flavor, \nFull Spectrum CBD Oil",
+        "more-info": "https://www.livegood.com/cbdOilForPets"
+    },
+    {
+        "product": "E3 - Energy, Endurance, Electrolytes",
+        "icon": "./images/e3-livegood.png",
+        "description": "Immediate Energy That Lasts Hours, \nElectrolytes for Performance and Recovery, \nGreat Tasting Berry Flavor",
+        "more-info": "https://www.livegood.com/e3"
+    },
+    {
+        "product": "Essential Aminos",
+        "icon": "./images/aminos_fruitpunch_front.png",
+        "description": "Support Muscle Strength and Function, \nBoosts Stamina and Recovery, \nPromote Energy and Focus",
+        "more-info": "https://www.livegood.com/essentialAminos"
+    },
+    {
+        "product": "Factor4 - Advanced Inflammation Management",
+        "icon": "./images/factor4.png",
+        "description": "Fights Inflammation, \nSupports Joint and Organ Health, \nPromotes Immune Health, \nPromotes Healthy Circulation",
+        "more-info": "https://www.livegood.com/factor4"
+    },
+    {
+        "product": "CBD Pain Relief Cream",
+        "icon": "./images/cbd-pain-relief-cream_front.png",
+        "description": "Soothes Joints, \nHelp Relax Muscles, \nSupport Pain Relief, \n2,000 mg of CBD",
+        "more-info": "https://www.livegood.com/cbdPainReliefCream"
+    },
+    {
+        "product": "Collagen Peptides",
+        "icon": "./images/collagen-peptides_front.png",
+        "description": "Skin, Hair and Nail Support, \nBone, Joint, and Muscle Health, \nWeight Management, \nHealthy Aging",
+        "more-info": "https://www.livegood.com/collagenPeptides"
+    },
+    {
+        "product": "Energy and Focus Patches",
+        "icon": "./images/energy.png",
+        "description": "Support Healthy Energy, \nPromote Positive Mood, \nHelp Improve Focus, \nPromote Greater Endurance",
+        "more-info": "https://www.livegood.com/energyFocusPatches"
+    },
+    {
+        "product": "Sleep Patches",
+        "icon": "./images/sleep-patches_front.png",
+        "description": "Support Deep Restful Sleep, \nImprove Sleep Quality, \nWake Up Refreshed, \nNatural Ingredients",
+        "more-info": "https://www.livegood.com/sleepPatches"
+    },
+    {
+        "product": "Methylene Blue Nootropic",
+        "icon": "./images/methylene-blue_front.png",
+        "description": "Help Enhance Memory, \nProtect Brain Cell Health, \nSupport Positive Mood, \nFocus and Cognition",
+        "more-info": "https://www.livegood.com/methyleneBlue"
+    },
+    {
+        "product": "Creatine + HMB",
+        "icon": "./images/creatine.png",
+        "description": "Improve Muscle Strength, \nReduce Recovery Time, \nPromote Maximum Endurance, \nSupport Weight Management, \nSupport Cognitive Function",
+        "more-info": "https://www.livegood.com/creatineHMB"
+    },
+    {
+        "product": "Essential Oils",
+        "icon": "./images/essential-oils-open.png",
+        "description": "Therapeutic Grade Premium Essential Oils, \nThird Party Laboratory Tested for Purity, \n15 Easy-Dispense Bottles",
+        "more-info": "https://www.livegood.com/essentialOils"
+    },
+    {
+        "product": "LEAN - Body Composition Improvement Formula",
+        "icon": "./images/lean-body.png",
+        "description": "Support Weight Management, \nBoost Metabolism, \nDecrease Body Fat",
+        "more-info": "https://www.livegood.com/leanBody"
+    },
+    {
+        "product": "Organic Children’s Multi-Vitamin Gummies",
+        "icon": "./images/childrens-vitamin.png",
+        "description": "USDA Certified Organic, \nAll Essential Vitamins, \nSupport Brain Development, \nVitamin C and Zinc for Immune Support",
+        "more-info": "https://www.livegood.com/childrensMultiVitamin"
+    },
+    {
+        "product": "Hormonal Balance for Women",
+        "icon": "./images/hormonal-balance-compare.png",
+        "description": "Ease Bloating, \nImprove Mood, \nSoothe Menstrual Cramping, \nReduce Food Craving, \nSupport Hormonal Balance",
+        "more-info": "https://www.livegood.com/hormonalBalanceforWomen"
+    },
+    {
+        "product": "Hydration Amplifier",
+        "icon": "./images/hydration-amplifier-front.png",
+        "description": "Rapid Rehydration, \nMaximize Performance, \nZero Sugar Electrolytes, \nNo Artificial Ingredients",
+        "more-info": "https://www.livegood.com/hydrationAmplifier"
+    },
+    {
+        "product": "Probiotic Gut Support",
+        "icon": "./images/probiotic-gut-support-front.png",
+        "description": "60 Billion CFU of 10-Strain Probiotics, \n9 Digestive Enzymes, \nOrganic Prebiotic Complex, \nDelayed Release Capsules",
+        "more-info": "https://www.livegood.com/probioticGutSupport"
+    },
+    {
+        "product": "Himalayan Shilajit & Organic Ashwagandha",
+        "icon": "./images/himalayan-moss-compare.png",
+        "description": "Support Brain and Cognitive Function, \nBoost Stamina and Endurance, \nSupport Sexual and Reproductive Health, \nSupport Healthy Testosterone Levels",
+        "more-info": "https://www.livegood.com/himalayanShilajit"
+    }
+
+]
