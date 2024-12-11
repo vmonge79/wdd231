@@ -48,3 +48,16 @@
 .cards {
     grid-template-columns: repeat(5, 1fr);
 }
+
+/*INDEX*/
+
+.welcome {
+    font-size: 2rem;
+    margin-top: 20px;
+
+}
+
+.index {
+    font-size: 1rem;
+    margin: 20px;
+}

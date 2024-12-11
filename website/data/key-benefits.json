@@ -1,0 +1,27 @@
+[
+    {
+        "product": "Vitamins \n& Minerals",
+        "icon": "./images/vitam-icon.png",
+        "description": "Essential for closing nutritional gaps."
+    },
+
+    {
+        "product": "Plant-Based Supplements",
+        "icon": "./images/plant-based.webp",
+        "description": "Harnessing the power of nature."
+    },
+
+    {
+        "product": "Protein & Superfood Powders",
+        "icon": "./images/protein.jpg",
+        "description": "Fueling your energy and recovery."
+    },
+
+    {
+        "product": "Natural Skin \n& Body Care",
+        "icon": "./images/skin.jpg",
+        "description": "Clean, effective products for inner and outer care."
+    }
+
+
+]

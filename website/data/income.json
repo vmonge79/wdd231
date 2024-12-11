@@ -1,0 +1,28 @@
+[
+    {
+        "product": "Low Start-Up Costs",
+        "icon": "./images/mlow-cost.jpg",
+        "description": "Start building your business with ease."
+    },
+
+    {
+        "product": "Residual Income",
+        "icon": "./images/passive.png",
+        "description": "Create a sustainable, passive income stream."
+    },
+
+    {
+        "product": "Global Reach",
+        "icon": "./images/global.webp",
+        "description": "Impact lives across the globe."
+    },
+
+    {
+        "product": "Comprehensive Support",
+        "icon": "./images/support.jpeg",
+        "description": "Benefit from expert training and resources."
+    }
+
+
+]
+
