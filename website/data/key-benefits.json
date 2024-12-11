@@ -12,15 +12,15 @@
     },
 
     {
-        "product": "Protein & Superfood Powders",
-        "icon": "./images/protein.jpg",
-        "description": "Fueling your energy and recovery."
-    },
-
-    {
         "product": "Natural Skin \n& Body Care",
         "icon": "./images/skin.jpg",
         "description": "Clean, effective products for inner and outer care."
+    },
+
+    {
+        "product": "Protein & Superfood Powders",
+        "icon": "./images/protein.jpg",
+        "description": "Fueling your energy and recovery."
     }
 
 
