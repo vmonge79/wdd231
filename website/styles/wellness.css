@@ -260,7 +260,7 @@ footer p{
     align-items: center;
     margin: 0;
 }
-.joinbtn{
+.joinbtn  {
     display: inline-block;
     text-align: center;
     background-color: rgb(255, 152, 0);
@@ -283,7 +283,7 @@ footer p{
 
 /*HEALTH CARDS*/
 
-.health {
+.health, .income {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -291,7 +291,7 @@ footer p{
     padding: 20px;
 }
 
-.card2 {
+.card2, .card3 {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -300,7 +300,7 @@ footer p{
     text-align: center;
 }
 
-.card2-icon {
+.card2-icon, .card3-icon {
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -311,24 +311,26 @@ footer p{
 
 }
 
-.card2-icon img {
+.card2-icon img, .card3-icon img {
     width: 60px;
     height: 60px;
     object-fit: cover;
 }
 
-.card2-product {
+.card2-product, .card3-product {
     font-weight: bold;
     font-size: 1.2rem;
     margin: 10px 0;
 }
 
-.card2-description {
+.card2-description, .card3-description {
     font-style: italic;
     color: #555;
     margin-top: 20px;
     font-size: .90rem;
 }
+
+
 
 /* JOIN */
 
@@ -337,4 +339,174 @@ footer p{
     text-align: center;
     line-height: 1.5rem;
     font-style: italic;
+}
+
+/*FORM*/
+
+form {
+    background-color: white;
+    color: var(--color-darkgray);
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: none;
+    font-size: 1.35rem;
+    font-weight: bold;
+    display: block;
+}
+
+form p {
+    text-align: center;
+    line-height: 1.25rem;
+}
+
+
+.f1 fieldset {
+    margin: 2rem 0.5rem;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.f1 legend {
+    color: var(--color-darkgray);
+    padding: 0 .5rem;
+}
+
+.f1 label {
+    display: block;
+    padding-top: .25rem;
+    color: var(--color-darkgray);
+    font-size: .9rem;
+}
+
+.f1 div {
+    padding-top: 1rem;
+}
+
+.f1 input[type="text"] {
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    height: 25px;
+
+}
+
+.f1 input[type="email"] {
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    height: 25px;
+
+}
+
+.f1 input[type="phone"] {
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    height: 25px;
+
+}
+
+
+.f1 input[type="submit"] {
+    border: none;
+    background-color: var(--color-orange);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 200px;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.yourname,
+.email .check {
+    font-size: 1em;
+
+}
+
+
+.name {
+    margin-top: -45px;
+}
+
+
+.f1 input[type="submit"]:hover {
+    box-shadow: 2px 2px 6px #686666;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px #686666;
+    font-size: 1.2rem;
+}
+
+/* FORM RESPONSE */
+
+.responseh1 {
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.name-input {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: var(--color-orange);
+    text-align: center;
+}
+
+/*MODAL*/
+
+.modal,
+.visit-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
 }

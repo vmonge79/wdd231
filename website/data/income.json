@@ -1,24 +1,24 @@
 [
     {
-        "product": "Low Start-Up Costs",
-        "icon": "./images/mlow-cost.jpg",
+        "title": "Low Start-Up Costs",
+        "icon": "./images/low-cost.jpg",
         "description": "Start building your business with ease."
     },
 
     {
-        "product": "Residual Income",
+        "title": "Residual Income",
         "icon": "./images/passive.png",
         "description": "Create a sustainable, passive income stream."
     },
 
     {
-        "product": "Global Reach",
+        "title": "Global Reach",
         "icon": "./images/global.webp",
         "description": "Impact lives across the globe."
     },
 
     {
-        "product": "Comprehensive Support",
+        "title": "Comprehensive Support",
         "icon": "./images/support.jpeg",
         "description": "Benefit from expert training and resources."
     }
