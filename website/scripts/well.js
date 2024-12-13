@@ -12,12 +12,18 @@ hambutton.addEventListener('click', () => {
 fetch('data/wellness.json')
     .then(response => response.json())
     .then(products => {
+        console.log('Products loaded:', products); // Para verificar que se cargan correctamente los productos
         createProductCards(products);
     })
     .catch(error => console.error('Error loading JSON:', error));
 
 function createProductCards(products) {
     const cardsContainer = document.querySelector('.cards');
+    if (!cardsContainer) {
+        console.error('No se encontró el contenedor de tarjetas (.cards)');
+        return;
+    }
+
     products.forEach(product => {
         const card = document.createElement('div');
         card.classList.add('card');
@@ -31,6 +37,10 @@ function createProductCards(products) {
     });
 
     const images = document.querySelectorAll('.card img');
+    if (images.length === 0) {
+        console.error('No se encontraron imágenes en las tarjetas');
+        return;
+    }
 
     const lazyLoad = (entries, observer) => {
         entries.forEach(entry => {
@@ -52,6 +62,7 @@ function createProductCards(products) {
         image.src = '';
     });
 }
+
 
 
 /*Benefits*/
