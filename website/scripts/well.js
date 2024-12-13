@@ -12,58 +12,24 @@ hambutton.addEventListener('click', () => {
 fetch('data/wellness.json')
     .then(response => response.json())
     .then(products => {
-        console.log('Products loaded:', products); // Para verificar que se cargan correctamente los productos
         createProductCards(products);
     })
     .catch(error => console.error('Error loading JSON:', error));
 
 function createProductCards(products) {
     const cardsContainer = document.querySelector('.cards');
-    if (!cardsContainer) {
-        console.error('No se encontró el contenedor de tarjetas (.cards)');
-        return;
-    }
-
     products.forEach(product => {
         const card = document.createElement('div');
         card.classList.add('card');
         card.innerHTML = `
-            <img data-src="${product.icon}" alt="${product.product}" class="card-img" />
+            <img src="${product.icon}" alt="${product.product}" />
             <h3>${product.product}</h3>
             <p>${product.description.replace(/\n/g, '<br>')}</p>
             <a href="${product['more-info']}" target="_blank">More Info</a>
         `;
         cardsContainer.appendChild(card);
     });
-
-    const images = document.querySelectorAll('.card img');
-    if (images.length === 0) {
-        console.error('No se encontraron imágenes en las tarjetas');
-        return;
-    }
-
-    const lazyLoad = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.onload = () => img.classList.add('loaded');
-                observer.unobserve(img);
-            }
-        });
-    };
-
-    const observer = new IntersectionObserver(lazyLoad, {
-        rootMargin: '0px 0px 200px 0px'
-    });
-
-    images.forEach(image => {
-        observer.observe(image);
-        image.src = '';
-    });
 }
-
-
 
 /*Benefits*/
 
