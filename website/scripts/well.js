@@ -9,30 +9,49 @@ hambutton.addEventListener('click', () => {
 
 /*CARDS*/
 
-function loadProducts() {
-    fetch('data/wellness.json')
-        .then(response => response.json())
-        .then(products => {
-            createProductCards(products);
-        })
-        .catch(error => console.error('Error loading JSON:', error));
-}
+fetch('data/wellness.json')
+    .then(response => response.json())
+    .then(products => {
+        createProductCards(products);
+    })
+    .catch(error => console.error('Error loading JSON:', error));
 
-document.getElementById('loadButton').addEventListener('click', () => {
-    loadProducts();
-});
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            loadProducts();
-            observer.disconnect();
-        }
+function createProductCards(products) {
+    const cardsContainer = document.querySelector('.cards');
+    products.forEach(product => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+        card.innerHTML = `
+            <img data-src="${product.icon}" alt="${product.product}" class="card-img" />
+            <h3>${product.product}</h3>
+            <p>${product.description.replace(/\n/g, '<br>')}</p>
+            <a href="${product['more-info']}" target="_blank">More Info</a>
+        `;
+        cardsContainer.appendChild(card);
     });
-}, { threshold: 0.5 });
 
-const section = document.getElementById('productSection');
-observer.observe(section);
+    const images = document.querySelectorAll('.card img');
+
+    const lazyLoad = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.onload = () => img.classList.add('loaded');
+                observer.unobserve(img);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(lazyLoad, {
+        rootMargin: '0px 0px 200px 0px'
+    });
+
+    images.forEach(image => {
+        observer.observe(image);
+        image.src = '';
+    });
+}
 
 
 /*Benefits*/
